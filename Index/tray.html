@@ -24,39 +24,29 @@
             </div>
           </nav>
     </head>
+        <base href="tray"> <!-- cambiar a la URL final-->
+    </head>
     <body>
         <main>
             <section class="hero is-primary">
                 <div class="hero-body">
-                  <div class="container has-text-centered">
+                    <div class="container has-text-centered">
                     <p class="title">
                         ¡Bienvenido a la Casa de los Platos!
                     </p>
                     <p class="subtitle">
                         Todos los menús, platos e ingredientes en un solo lugar
                     </p>
-                  </div>
+                    </div>
                 </div>
             </section>
         </main>
-        <div class="buttons">
-          </div>
-            <div class="container has-text-centered">
-          <button class="button is-rounded" onclick="window.location.href='/Courses/index.html';">Platos </button>
-          <button class="button is-primary is-rounded" onclick="window.location.href='/Ingredients/index.html';">Ingredientes</button>
-          <button class="button is-link is-rounded">A-Z</button>
-          <button class="button is-info is-rounded">Z-A</button>
-          <button class="button is-success is-rounded">Menor precio</button>
-          <button class="button is-danger is-rounded">Mayor precio</button>
-          </div>
-        </div>
-        <div class="Trays">
-
-        </div>
+        <div id="Tray">
+        </div">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
-        <script src="index.js" async defer type="module"></script>
+        <script src="tray.js" async defer type="module"></script>
     </body>
 </html>

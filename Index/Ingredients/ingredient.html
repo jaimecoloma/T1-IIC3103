@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <<![endif]-->
 <html>
     <head>
         <meta charset="utf-8">
@@ -12,8 +12,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
         <nav class="navbar is-dark"  role="navigation" aria-label="main navigation">
-            <div class="navbar-brand" href="/">
-              <!--<a class="navbar-item"> FOTO LOGO
+            <div class="navbar-brand" href="/Courses/">
+              <!--<a class="navbar-item">
                 <img src="https://aquijaime.cl/wp-content/uploads/elementor/thumbs/Sin-título-2-02-oo11w1h2wkakdvb82j4m8pkg0l2ok99nqe3llkkmha.png"  width="200" height="123">
               </a>-->
               <p>
@@ -23,40 +23,29 @@
              
             </div>
           </nav>
+        <base href="ingredient"> <!-- cambiar a la URL final-->
     </head>
     <body>
         <main>
             <section class="hero is-primary">
+                <div class="container has-text-centered">
                 <div class="hero-body">
-                  <div class="container has-text-centered">
                     <p class="title">
                         ¡Bienvenido a la Casa de los Platos!
                     </p>
                     <p class="subtitle">
                         Todos los menús, platos e ingredientes en un solo lugar
                     </p>
-                  </div>
+                    </div>
                 </div>
             </section>
         </main>
-        <div class="buttons">
-          </div>
-            <div class="container has-text-centered">
-          <button class="button is-rounded" onclick="window.location.href='/Courses/index.html';">Platos </button>
-          <button class="button is-primary is-rounded" onclick="window.location.href='/Ingredients/index.html';">Ingredientes</button>
-          <button class="button is-link is-rounded">A-Z</button>
-          <button class="button is-info is-rounded">Z-A</button>
-          <button class="button is-success is-rounded">Menor precio</button>
-          <button class="button is-danger is-rounded">Mayor precio</button>
-          </div>
-        </div>
-        <div class="Trays">
-
-        </div>
+        <div id="Ingredient">
+        </div">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
-        <script src="index.js" async defer type="module"></script>
+        <script src="ingredient.js" async defer type="module"></script>
     </body>
 </html>
