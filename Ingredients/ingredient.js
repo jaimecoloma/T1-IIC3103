@@ -12,10 +12,10 @@ window.onload = async function(){
     const id = params.get("id")
     const ingredient = await get_ingredients_id(id)
     const htmlstring = `<b>${ingredient.name}</b>
-    <p>Precio: ${ingredient.price}</p>
-    <p>Descripción: ${ingredient.description}</p>
-    <p>Expiración: ${ingredient.expiration}</p>
-    <p>Tamaño: ${ingredient.size}</p>
+    <p><b>Precio</b>: ${ingredient.price}</p>
+    <p><b>Descripción</b>: ${ingredient.description}</p>
+    <p><b>Expiración</b>: ${ingredient.expiration}</p>
+    <p><b>Tamaño</b>: ${ingredient.size}</p>
     <img src = ${ingredient.img_url} width="600" 
     height="500"/>
     `

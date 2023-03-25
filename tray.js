@@ -11,14 +11,14 @@ window.onload = async function(){
     const params = new URLSearchParams(window.location.search)
     const id = params.get("id")
     const tray = await get_trays_id(id)  // OJO, CAMBIAMOS HTMLSTRING DE CONST A VAR
-    var htmlstring = `<b1>${tray.name}</b1> 
+    var htmlstring = `<b>${tray.name}</b>
     <p>Descripción: ${tray.description}</p>
-    <p>Precio: ${tray.price}</p>
-    <p>Expiración: ${tray.expiration}</p>
-    <p>Tamaño: ${tray.size}</p>
+    <p><b>Precio</b>: ${tray.price}</p>
+    <p><b>Expiración</b>: ${tray.expiration}</p>
+    <p><b>Tamaño</b>: ${tray.size}</p>
     `
 
-    htmlstring += `<table class="center">
+    htmlstring += `<table class="center" style="border:1px solid black;margin-left:auto;margin-right:auto;">
     <tr>
     <th>Platos</th>
     <th>Categoría</th>
@@ -30,7 +30,7 @@ window.onload = async function(){
         //button.addEventListener("click", function(){
         //    location.href =`course.html?id=${course.id}`
         htmlstring += "<tr>"
-        htmlstring += "<td>"
+        htmlstring += "<td text-align: center;>"
         //htmlstring += course.name
         htmlstring += "<button class='button is-primary is-rounded'"
         const root = `"/Courses/course.html?id=${course.id}"`

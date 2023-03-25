@@ -12,10 +12,10 @@ window.onload = async function(){
     const id = params.get("id")
     const course = await get_courses_id(id)  // OJO, CAMBIAMOS HTMLSTRING DE CONST A VAR
     var htmlstring = `<b>${course.name}</b> 
-    <p>Descripción: ${course.description}</p>
-    <p>Precio: ${course.price}</p>
-    <p>Expiración: ${course.expiration}</p>
-    <p>Tamaño: ${course.size}</p>
+    <p><b>Descripción</b>: ${course.description}</p>
+    <p><b>Precio</b>: ${course.price}</p>
+    <p><b>Expiración</b>: ${course.expiration}</p>
+    <p><b>Tamaño</b>: ${course.size}</p>
     <img src = ${course.img_url} width="300" 
         height="250"/><br>
     `
