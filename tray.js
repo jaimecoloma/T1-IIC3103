@@ -13,8 +13,8 @@ window.onload = async function(){
     const tray = await get_trays_id(id)  // OJO, CAMBIAMOS HTMLSTRING DE CONST A VAR
     var htmlstring = `<b>${tray.name}</b>
     <p>Descripción: ${tray.description}</p>
-    <p><b>Precio</b>: ${tray.price}</p>
-    <p><b>Expiración</b>: ${tray.expiration}</p>
+    <p><b>Precio</b>: $${tray.price}</p>
+    <p><b>Expiración</b>: ${tray.expiration}h</p>
     <p><b>Tamaño</b>: ${tray.size}</p>
     `
 
@@ -32,7 +32,7 @@ window.onload = async function(){
         htmlstring += "<tr>"
         htmlstring += "<td text-align: center;>"
         //htmlstring += course.name
-        htmlstring += "<button class='button is-primary is-rounded'"
+        htmlstring += "<button class='button is-warning is-light'"
         const root = `"/Courses/course.html?id=${course.id}"`
         htmlstring += `onclick='window.location.href=${root};'>`
         htmlstring += course.name

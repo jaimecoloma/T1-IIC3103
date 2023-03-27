@@ -13,8 +13,8 @@ window.onload = async function(){
     const course = await get_courses_id(id)  // OJO, CAMBIAMOS HTMLSTRING DE CONST A VAR
     var htmlstring = `<b>${course.name}</b> 
     <p><b>Descripción</b>: ${course.description}</p>
-    <p><b>Precio</b>: ${course.price}</p>
-    <p><b>Expiración</b>: ${course.expiration}</p>
+    <p><b>Precio</b>: $${course.price}</p>
+    <p><b>Expiración</b>: ${course.expiration}h</p>
     <p><b>Tamaño</b>: ${course.size}</p>
     <img src = ${course.img_url} width="300" 
         height="250"/><br>
@@ -25,7 +25,7 @@ window.onload = async function(){
     for (let ingredient of course.ingredients){
         htmlstring += "<p>"
         //htmlstring += ingredient.name
-        htmlstring += "<button class='button is-primary is-rounded'"
+        htmlstring += "<button class='button is-warning is-light'"
         const root = `"/Ingredients/ingredient.html?id=${ingredient.id}"`
         htmlstring += `onclick='window.location.href=${root};'>`
         htmlstring += ingredient.name

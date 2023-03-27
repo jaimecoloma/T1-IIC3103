@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
 <html>
     <head>
         <meta charset="utf-8">
@@ -42,16 +42,17 @@
         <div class="buttons">
           </div>
             <div class="container has-text-centered">
-          <button class="button is-rounded" onclick="window.location.href='/Courses/index.html';">Platos </button>
-          <button class="button is-primary is-rounded" onclick="window.location.href='/Ingredients/index.html';">Ingredientes</button>
-          <button class="button is-link is-rounded">A-Z</button>
+          <button class="button is-primary is-light is-rounded" onclick="window.location.href='/Courses/index.html';">Platos </button>
+          <button class="button is-primary is-light is-rounded" onclick="window.location.href='/Ingredients/index.html';">Ingredientes</button>
+          <!--<button class="button is-link is-rounded">A-Z</button>
           <button class="button is-info is-rounded">Z-A</button>
           <button class="button is-success is-rounded">Menor precio</button>
-          <button class="button is-danger is-rounded">Mayor precio</button>
+          <button class="button is-danger is-rounded">Mayor precio</button>-->
           </div>
         </div>
-        
-        <div class="Trays" style="margin-left:45px;width:auto; margin-top: 30px;">
+        <div id="Boton" style="margin-left:45px;width:auto; margin-top: 30px;display:flex;align-items: center;justify-content: center;">
+        </div>
+        <div class="Trays" style="margin-left:45px;width:auto; margin-top: 30px;display:flex;flex-direction: column;align-items: center;justify-content: center;">
 
         </div>
         <!--[if lt IE 7]>
