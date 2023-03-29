@@ -63,6 +63,10 @@ window.onload = async function(){
     const div_trays = document.getElementsByClassName('Trays')[0]
     const div_courses = document.getElementsByClassName('Courses')[0]
     const div_ingredients = document.getElementsByClassName('Ingredients')[0]
+    let p1 = document.createElement("p")
+    p1.className = "title"
+    p1.innerHTML = "Menus"
+    div_trays.appendChild(p1)
     for (let tray of args[0]){
         let div = document.createElement("br")
         var button = document.createElement("button")
@@ -74,6 +78,10 @@ window.onload = async function(){
         div_trays.appendChild(div)
         div_trays.appendChild(button)
     }
+    let p2 = document.createElement("p")
+    p2.className = "title"
+    p2.innerHTML = "Platos"
+    div_courses.appendChild(p2)
     for (let course of args[1]){
         let div = document.createElement("br")
         var img = document.createElement("img")
@@ -90,6 +98,10 @@ window.onload = async function(){
         div_courses.appendChild(button)
         div_courses.appendChild(img)
     }
+    let p3 = document.createElement("p")
+    p3.className = "title"
+    p3.innerHTML = "Ingredientes"
+    div_ingredients.appendChild(p3)
     for (let ingredient of args[2]){
         let div = document.createElement("br")
         var img = document.createElement("img")
