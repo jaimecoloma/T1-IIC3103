@@ -101,3 +101,18 @@ div_boton.appendChild(button_asc_price)
 div_boton.appendChild(button_des_name)
 div_boton.appendChild(button_asc_name)
 render_ingredients(button2, button3)
+
+var searchInput = document.querySelector("#search")
+var value = ""
+searchInput.addEventListener("input", (e) =>{
+    value = e.target.value
+})
+
+
+const buttonPressed = async () =>{
+    //const args = await promiseExecution(value)
+    //console.log(args)
+    location.href =`query.html?data=${value}`
+}
+
+document.getElementById("buscar").onclick = buttonPressed;
